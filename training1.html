@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>카운터</title>
+        <style>
+            #number {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+         </style>
+</head>
+<body>
+
+<h2 id="number">0</h2>
+<div>
+<button onclick="numberUP()">+1</button>
+<button onclick="numberDown()">-1</button>
+</div>
+
+<script>
+  let count = 0;
+
+  function numberUP() {
+    count++;
+    document.getElementById('number').innerText = count;
+  }
+  
+  function numberDown() {
+    count--;
+    document.getElementById('number').innerText = count;
+  }
+</script>
+
+</body>
+</html>
